@@ -14,7 +14,7 @@ class PhoneAuthPage extends StatefulWidget {
 }
 
 class _PhoneAuthPage extends State<PhoneAuthPage>{
-  int start = 30;
+  int start = 60;
   bool wait = false;
   String buttonName = "Send";
   TextEditingController phoneController = TextEditingController();
