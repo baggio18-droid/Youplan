@@ -146,7 +146,7 @@ class _HomePageState extends State<HomePage> {
                       }
                      
                 selected.add(Select(
-                  id: snapshot.data!.docs[index].id, checkValue: false));   
+                  id: snapshot.data!.docs[index].id, checkValue: true));   
                    
                 return InkWell(
                   onTap: (){
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
           }
         ),);
   }
-  void onChange(int index){
+   onChange(int index){
     print(index);
     setState(){
       selected[index].checkValue = !selected[index].checkValue;

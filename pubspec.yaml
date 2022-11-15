@@ -36,6 +36,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.10.0
+  flutter_native_splash: ^2.2.14
 
   
   # The following adds the Cupertino Icons font to your application.
@@ -58,8 +59,14 @@ dev_dependencies:
   
   google_maps: ^6.2.0
 
+
 flutter_icons: 
   image_path: "assets/App icon.png"
+  android: true
+
+flutter_native_splash:
+  color: "#702963"
+  image: assets/App icon.png
   android: true
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

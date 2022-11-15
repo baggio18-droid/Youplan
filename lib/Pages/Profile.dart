@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:youplan/Pages/About.dart';
 import 'dart:io';
 import 'dart:async';
-
 import 'package:youplan/Pages/AddTodo.dart';
 import 'package:youplan/Pages/HomePage.dart';
 import 'package:youplan/Pages/LocationPage.dart';
@@ -87,13 +87,21 @@ class _ProfileState extends State<Profile> {
                     ])),
               ),
             ),
-            label: 'plus',
+            label: 'map',
           ),
           BottomNavigationBarItem(
-            icon: IconButton(icon: Icon(Icons.logout), color: Colors.white, iconSize: 32, onPressed: () async{
-            
-     } 
-     ),label: 'logout',
+            icon: InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (builder) => About()));
+              },
+              child: Icon(
+                Icons.info_outline,
+                size: 32,
+                color: Colors.white,
+              ),
+            ),
+            label: 'About',
           ),
         ]),
     );

@@ -6,7 +6,7 @@ import 'package:youplan/Pages/HomePage.dart';
 import 'package:youplan/Pages/SignInPage.dart';
 import 'package:youplan/Pages/SignUpPage.dart';
 import 'package:youplan/Service/Auth_Service.dart';
-
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
    await Firebase.initializeApp();
